@@ -12,10 +12,6 @@
 </head>
 
 <body>
-    <script>
-        document.hello = 1;
-        document.visitor = {};
-    </script>
     <style>
         #planexpo_iframe {
             height: calc(100vh - 60px);
@@ -24,8 +20,6 @@
     </style>
     <iframe id="planexpo_iframe" style="border: none;"></iframe>
     <script>
-        document.hello = 2;
-        document.visitor = {};
         var script = `
           <div id="planexpo-plan"></div>
             <script id="planHelper" src="https://d381le272wiv1y.cloudfront.net/plan/quinzemai-santexpo-2024-webapp/liveDataHelper.js"
@@ -33,9 +27,6 @@
     `;
         document.querySelector("#planexpo_iframe").contentDocument.write(script);
         document.querySelector("#planexpo_iframe").contentDocument.close();
-
-        document.hello = 3;
-        document.visitor = {};
     </script>
 </body>
 
