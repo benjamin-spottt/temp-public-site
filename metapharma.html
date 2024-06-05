@@ -7,32 +7,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Website</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <title>Document</title>
 </head>
 
 <body>
-  <main>
-    <style>
-      #planexpo_iframe {
-        height: calc(100vh - 60px);
-        width: 100%;
-      }
-    </style>
-    <iframe id="planexpo_iframe" style="border: none;"></iframe>
-    <script>
-      var script = `
+  <style>
+    #planexpo_iframe {
+      height: calc(100vh - 60px);
+      width: 100%;
+    }
+  </style>
+  <iframe id="planexpo_iframe" style="border: none;"></iframe>
+  <script>
+    var script = `
       <div id="planexpo-plan"></div>
         <script id="planHelper" src="https://d1u5dis0urgs3i.cloudfront.net/plan/showroom-metapharma-app/liveDataHelper.js"
         data-root-url="https://d1u5dis0urgs3i.cloudfront.net/showroom-metapharma/api/public_plan/" data-source="dynamic" data-version="5"><\/script>
 `;
-      document.querySelector("#planexpo_iframe").contentDocument.write(script);
-      document.querySelector("#planexpo_iframe").contentDocument.close();
-    </script>
-  </main>
-  <script src="index.js"></script>
+    document.querySelector("#planexpo_iframe").contentDocument.write(script);
+    document.querySelector("#planexpo_iframe").contentDocument.close();
+  </script>
+  </>
 </body>
 
 </html>
