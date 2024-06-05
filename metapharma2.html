@@ -1,0 +1,33 @@
+<!--
+  https://benjamin-spottt.github.io/temp-public-site/metapharma.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    #planexpo_iframe {
+      height: calc(100vh - 60px);
+      width: 100%;
+    }
+  </style>
+  <iframe id="planexpo_iframe" style="border: none;"></iframe>
+  <script>
+    var script = `
+      <div id="planexpo-plan"></div>
+        <script id="planHelper" src="https://metapharma.planexpo.fr/plan/showroom-metapharma-app/liveDataHelper.js"
+        data-root-url="https://metapharma.planexpo.fr/showroom-metapharma/api/public_plan" data-source="dynamic" data-version="5"><\/script>
+`;
+    document.querySelector("#planexpo_iframe").contentDocument.write(script);
+    document.querySelector("#planexpo_iframe").contentDocument.close();
+  </script>
+  </>
+</body>
+
+</html>
