@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Rectangle and Circle</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* Allow body to scroll */
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; width: 100%; height: 100%; overflow: auto;">
+<div style="position: relative; width: 2400px; height: 1334px;">
+    <div style="position: absolute; top: 0; left: 0; width: 2400px; height: 1334px; background: url('/img/cats.jpg') no-repeat center center; background-size: cover; z-index: 1;"></div>
+    <svg style="position: absolute; top: 0; left: 0; width: 2400px; height: 1334px; z-index: 2;" viewBox="0 0 2400 1334" xmlns="http://www.w3.org/2000/svg">
+        <rect width="2400" height="1334" fill="none" />
+        <circle class="circle" cx="420" cy="340" r="20" fill="yellow" style="cursor: pointer;" onclick="alert('yellow clicked')" />
+        <circle class="circle" cx="970" cy="310" r="15" fill="orange" style="cursor: pointer;" onclick="alert('orange clicked')" />
+        <circle class="circle" cx="1375" cy="590" r="25" fill="red" style="cursor: pointer;" onclick="alert('red clicked')" />
+    </svg>
+</div>
+
+
+</body>
+</html>
