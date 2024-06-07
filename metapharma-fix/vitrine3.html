@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma vitrine</title>
+    <style>
+        .modal {
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* allow mobile scroll */
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: black;
+            margin: 20px auto;
+            padding: 20px 80px;
+            border: 1px solid #888;
+            width: 90vw;
+        }
+
+        .zoom {
+            transform: scale(0.5, 0.5);
+        }
+
+        .sizing {
+            box-sizing: border-box;
+        }
+
+
+    </style>
+</head>
+<body _style="margin: 0; padding: 0; width: 100%; height: 100%; overflow: auto;">
+
+<div class="modal">
+
+    <!--
+    width: 3840px; height: 2160px;
+    3840 × 0.5625 = 2160
+
+    width: 1808px; height: 1017px;
+    1808 × 0.5625 = 1017
+
+    width: 1404px; height: 792px;
+    1408 × 0.5625 = 792
+
+
+    -->
+    <div style="width: 1404px;" class="modal-content">
+
+        <div style="
+        _border:1px solid cyan;
+        position: relative;
+        height: 792px;
+        "
+        >
+            <div
+                    style="
+             background: url('../img/nature.png') no-repeat;
+             background-size: contain;
+             position:absolute;top:0;left:0;
+             width:100vw;
+             height:100%;
+">
+
+            </div>
+            <svg width="100%"
+                 style="
+                border:1px solid red;
+                max-width: 1404px;
+                position:absolute;top:0;left:0
+            "
+                 viewBox="0 0 2400 1334" xmlns="http://www.w3.org/2000/svg">
+                <circle class="circle" cx="580" cy="250" r="20" fill="yellow" style="cursor: pointer;"
+                        onclick="alert('Nous contacter')"/>
+                <circle class="circle" cx="820" cy="560" r="15" fill="orange" style="cursor: pointer;"
+                        onclick="alert('respire.co')"/>
+                <circle class="circle" cx="1925" cy="790" r="25" fill="red" style="cursor: pointer;"
+                        onclick="alert('Accès catalogue')"/>
+            </svg>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
